@@ -1,0 +1,65 @@
+/* إعدادات الصفحة */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", Arial, sans-serif;
+  direction: rtl;
+  background-image: url('image.jpg'); /* حط اسم أو رابط الصورة هنا */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* رأس الصفحة */
+.main-header {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  backdrop-filter: blur(4px);
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  color: #00ffff;
+}
+
+.main-header h2 {
+  margin: 10px 0 0;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+/* أقسام القبائل */
+.tribes {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 40px 10%;
+}
+
+.tribe {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.tribe:hover {
+  transform: scale(1.03);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.tribe h1 {
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.tribe p {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
